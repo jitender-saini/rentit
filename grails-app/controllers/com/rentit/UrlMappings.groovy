@@ -1,4 +1,4 @@
-package rentit
+package com.rentit
 
 class UrlMappings {
 
@@ -9,7 +9,7 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/index")
+        "/"(controller: "login", action: "index")
         "500"(view:'/error')
         "404"(view:'/notFound')
     }
